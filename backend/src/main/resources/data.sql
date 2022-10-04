@@ -13,4 +13,8 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
 
-INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Bootcamp HTML', 'https://ygt-res.cloudinary.com/image/upload/c_fit,q_85,w_1024/v1614869703/image-sections/More%20South%20Carolina%20Golf%20Courses/jones-course-palmetto-dunes-2.jpg', 'https://inpaonline.com.br/wp-content/uploads/2019/10/online-course-8-899132.png');
+INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Bootcamp HTML', 'https://www.grautecnico.com.br/blog/wp-content/uploads/2021/02/GT-BOA-VISTA-BLOG-FARMACIA-1.png', 'https://http2.mlstatic.com/D_NQ_NP_373221-MLB20726931390_052016-W.jpg');
+
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES('1.0',TIMESTAMP WITH TIME ZONE '2020-11-20T03:00:00',TIMESTAMP WITH TIME ZONE '2021-11-20T03:00:00Z',1);
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES('2.0',TIMESTAMP WITH TIME ZONE '2020-12-20T03:00:00',TIMESTAMP WITH TIME ZONE '2021-12-20T03:00:00Z',1);
+
