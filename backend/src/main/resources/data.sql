@@ -15,6 +15,9 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
 
 INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Bootcamp HTML', 'https://www.grautecnico.com.br/blog/wp-content/uploads/2021/02/GT-BOA-VISTA-BLOG-FARMACIA-1.png', 'https://http2.mlstatic.com/D_NQ_NP_373221-MLB20726931390_052016-W.jpg');
 
-INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES('1.0',TIMESTAMP WITH TIME ZONE '2020-11-20T03:00:00',TIMESTAMP WITH TIME ZONE '2021-11-20T03:00:00Z',1);
-INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES('2.0',TIMESTAMP WITH TIME ZONE '2020-12-20T03:00:00',TIMESTAMP WITH TIME ZONE '2021-12-20T03:00:00Z',1);
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('1.0',TIMESTAMP WITH TIME ZONE '2020-11-20T03:00:00',TIMESTAMP WITH TIME ZONE '2021-11-20T03:00:00Z',1);
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0',TIMESTAMP WITH TIME ZONE '2020-12-20T03:00:00',TIMESTAMP WITH TIME ZONE '2021-12-20T03:00:00Z',1);
 
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Trilha HTML','Trilha principal do curso', 1, 'https://www.grautecnico.com.br/blog/wp-content/uploads/2021/02/GT-BOA-VISTA-BLOG-FARMACIA-1.png', 1, 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Forum','Tire suas duvidas', 2, 'https://www.grautecnico.com.br/blog/wp-content/uploads/2021/02/GT-BOA-VISTA-BLOG-FARMACIA-1.png', 2, 1);
+INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Lives','Lives exclusivas para a turma', 3, 'https://www.grautecnico.com.br/blog/wp-content/uploads/2021/02/GT-BOA-VISTA-BLOG-FARMACIA-1.png', 0, 1);
