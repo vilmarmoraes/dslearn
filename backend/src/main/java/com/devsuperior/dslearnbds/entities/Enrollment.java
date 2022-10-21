@@ -11,7 +11,7 @@ import javax.persistence.Table;
 import com.devsuperior.dslearnbds.entities.pk.EnrollmentPK;
 
 @Entity
-@Table(name = "tb_entollment")
+@Table(name = "tb_enrollment")
 public class Enrollment  implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
@@ -19,7 +19,7 @@ public class Enrollment  implements Serializable {
 	private EnrollmentPK id = new EnrollmentPK();
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-	private Instant envollMoment;	
+	private Instant enrollMoment;	
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant refundMoment;
@@ -29,12 +29,12 @@ public class Enrollment  implements Serializable {
 	public Enrollment() {		
 	}
 
-	public Enrollment(User user, Offer offer, Instant envollMoment, Instant refundMoment, boolean available,
+	public Enrollment(User user, Offer offer, Instant enrollMoment, Instant refundMoment, boolean available,
 			boolean onlyUpdate) {
 		super();
 		id.setUser(user);
 		id.setOffer(offer);
-		this.envollMoment = envollMoment;
+		this.enrollMoment = enrollMoment;
 		this.refundMoment = refundMoment;
 		this.available = available;
 		this.onlyUpdate = onlyUpdate;
@@ -55,12 +55,12 @@ public class Enrollment  implements Serializable {
 		id.setOffer(offer);
 	}
 
-	public Instant getEnvollMoment() {
-		return envollMoment;
+	public Instant getEnrollMoment() {
+		return enrollMoment;
 	}
 
-	public void setEnvollMoment(Instant envollMoment) {
-		this.envollMoment = envollMoment;
+	public void setEnrollMoment(Instant enrollMoment) {
+		this.enrollMoment = enrollMoment;
 	}
 
 	public Instant getRefundMoment() {
