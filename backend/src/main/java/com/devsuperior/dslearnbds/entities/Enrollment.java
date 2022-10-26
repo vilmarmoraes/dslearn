@@ -5,6 +5,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -38,10 +39,6 @@ public class Enrollment  implements Serializable {
 	@OneToMany(mappedBy = "enrollment")
 	private List<Deliver> deliveries = new ArrayList<>();
 	
-	public List<Deliver> getDeliveries() {
-		return deliveries;
-	}
-
 	public Enrollment() {		
 	}
 
@@ -103,5 +100,26 @@ public class Enrollment  implements Serializable {
 		this.onlyUpdate = onlyUpdate;
 	}
 	
+	public List<Deliver> getDeliveries() {
+		return deliveries;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Enrollment other = (Enrollment) obj;
+		return Objects.equals(id, other.id);
+	}
+
 	
 }
