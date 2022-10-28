@@ -29,7 +29,7 @@ public class AuthService {
 	public void validateSelfOrAdmin(Long userId) {
 		User user = authenticated();		
 		if(!user.getId().equals(userId) && !user.hasRole("ROLE_ADMIN")) {
-			throw new ForbiddenException("Acces danied");
+			throw new ForbiddenException("Access de	nied");
 		}
 	}
 	
