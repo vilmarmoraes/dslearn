@@ -1,0 +1,36 @@
+.authentication {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 683px;
+    height: 400px;
+    left: calc(50% - 683px/2 - 0.5px);
+    top: 184px;
+
+    background: #242526;
+    border-radius: 20px;
+}
+
+.authentication input {
+    width: 426px;
+    height: 47px;
+    background: #D7D7D7;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+.authentication button {
+    width: 258px;
+    height: 51px;
+    background: #2D88FF;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #EBEBEB;
+}

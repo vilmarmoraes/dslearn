@@ -1,0 +1,27 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background: #242526;
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    border: solid 1px white;
+    border-radius: 50%;
+    background-color: slategrey;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    margin: 10px;
+    list-style: none;
+}
+
+.nav ul li:hover {
+    color: rgb(255, 187, 0);
+}
